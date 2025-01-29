@@ -1,0 +1,25 @@
+.header{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #32CD32;
+    color:  #FFFFFF ;
+}
+.left_panel{
+    display: flex;
+    flex-direction: row;
+}
+.left_panel button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px;
+}
+.right_panel{
+    display: flex;
+    margin-left: 20px;
+}
+.right_panel p{
+    margin-right: 10px;
+}

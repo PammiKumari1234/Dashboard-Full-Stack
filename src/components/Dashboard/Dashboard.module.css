@@ -1,0 +1,10 @@
+.dashboard_main_wrapper{
+    display: flex;
+    width: 100%;
+}
+.left_panel{
+    width: auto;
+}
+.right_panel{
+    width: 100%;
+}

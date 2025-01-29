@@ -68,3 +68,29 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+DEEPSEEK_API_KEY=your-api-key-here
+DEEPSEEK_BASE_URL=https://api.deepseek.com
+
+Color Palette
+Primary Color: #32CD32 (LimeGreen)
+Secondary Color: #228B22 (ForestGreen)
+Accent Color: #ADFF2F (GreenYellow)
+Background Color: #FFFFFF (White)
+Text Color: #333333 (Dark Gray)
+Header
+Background Color: #32CD32 (LimeGreen)
+Text Color: #FFFFFF (White)
+Accent Elements: Use #ADFF2F (GreenYellow) for any icons or buttons to make them stand out.
+Sidebar
+Background Color: #228B22 (ForestGreen)
+Text Color: #FFFFFF (White)
+Accent Elements: Use #ADFF2F (GreenYellow) for active links or highlighted items.
+Hover State: Use a slightly lighter shade of ForestGreen (e.g., #32CD32) for hover states to provide visual feedback.
+Main Content Area
+Background Color: #FFFFFF (White)
+Text Color: #333333 (Dark Gray)
+Accent Elements: Use #32CD32 (LimeGreen) for important elements like buttons, alerts, or key data points.
+Borders and Dividers: Use a light gray (#E0E0E0) for borders and dividers to maintain a clean look.
+
