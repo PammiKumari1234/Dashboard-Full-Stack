@@ -6,10 +6,9 @@ import styles from "./Dashboard.module.css";
 
 const Dashboard = () => {
   const [dataList, setdataList] = useState([]);
-  const[isSideBarOpen,setisSideBarOpen]=useState(true);
-  const toggleSideBar=()=>{
-    setisSideBarOpen(!isSideBarOpen);
-  }
+  const [isSideBarOpen, setisSideBarOpen] = useState(true);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
   useEffect(() => {
     axios
       .get("http://localhost:5000/api/dashboard")
@@ -17,13 +16,21 @@ const Dashboard = () => {
       .catch((error) => console.log("error", error));
   }, []);
 
+  const toggleSideBar = () => {
+    setisSideBarOpen(!isSideBarOpen);
+  };
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+  };
+
   return (
-    <div className={styles.dashboard_main_wrapper}>
+    <div className={`${styles.dashboard_main_wrapper} ${isDarkMode ? styles.dark_mode : ''}`}>
       <div className={styles.left_panel}>
-        <Sidebar isOpen={isSideBarOpen}/>
+        <Sidebar isOpen={isSideBarOpen} />
       </div>
       <div className={styles.right_panel}>
-        <Header ontoggleSideBar={toggleSideBar}/>
+        <Header onToggleSideBar={toggleSideBar} onToggleDarkMode={toggleDarkMode} />
         {dataList.map((item) => (
           <div key={item.id}>
             {item.title}

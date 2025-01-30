@@ -1,10 +1,18 @@
-.dashboard_main_wrapper{
+.dashboard_main_wrapper {
     display: flex;
     width: 100%;
-}
-.left_panel{
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .dashboard_main_wrapper.dark_mode {
+    background-color: #222222;
+    color: #FFFFFF;
+  }
+  
+  .left_panel {
     width: auto;
-}
-.right_panel{
+  }
+  
+  .right_panel {
     width: 100%;
-}
+  }

@@ -1,8 +1,8 @@
 import React from 'react';
 import styles from "./Header.module.css";
-import { FaBars } from 'react-icons/fa';
+import { FaBars,FaMoon, FaSun } from 'react-icons/fa';
 
-const Header = ({ontoggleSideBar}) => {
+const Header = ({ontoggleSideBar,onToggleDarkMode}) => {
   return (
     <div className={styles.header}>
       <div className={styles.left_panel}>
@@ -10,6 +10,9 @@ const Header = ({ontoggleSideBar}) => {
         <h1>Dashboard</h1>
       </div>
       <div className={styles.right_panel}>
+      <button onClick={onToggleDarkMode}>
+          <FaMoon size={24} color="#FFFFFF" />
+        </button>
         <p>About</p>
         <p>Notifications</p>
       </div>
